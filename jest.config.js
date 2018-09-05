@@ -18,7 +18,7 @@ module.exports = {
     RETHINK_KNEX_NOREFS: "1", // avoids db race conditions
     DEFAULT_SERVICE: 'fakeservice',
     DST_REFERENCE_TIMEZONE: 'America/New_York',
-    DATABASE_SETUP_TEARDOWN_TIMEOUT: 20000,
+    DATABASE_SETUP_TEARDOWN_TIMEOUT: 200000,
   },
   moduleFileExtensions: [
     "js",

@@ -39,7 +39,7 @@ if (process.env.DB_JSON || global.DB_JSON) {
   const databaseType = process.env.DATABASE_URL.match(/^\w+/)[0]
   config = {
     client: (/postgres/.test(databaseType) ? 'pg' : databaseType),
-    connection: process.env.DATABASE_URL,
+    connection: process.env.DATABASE_URL + "?ssl=true",
     pool: {
       min: process.env.DB_MIN_POOL || 2,
       max: process.env.DB_MAX_POOL || 10
